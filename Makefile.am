@@ -1,11 +1,11 @@
-SUBDIRS = doc src
+SUBDIRS = doc
 
 dist_bin_SCRIPTS = bin/cakelisp$(EXEEXT)
 CLEANFILES = $(dist_bin_SCRIPTS)
 
-bin/cakelisp$(EXEEXT): src/cakelisp_bootstrap
-	src/cakelisp_bootstrap $(CAKELISP_BOOTSTRAP)
+bin/cakelisp$(EXEEXT): $(CAKELISP_BUILD)
+	$(CAKELISP_BUILD)
 
 TESTS = test/RunTests.cake
 LOG_COMPILER = bin/cakelisp$(EXEEXT)
-AM_LOG_FLAGS = runtime/$(CAKELISP_RUNTIME)
+AM_LOG_FLAGS = $(CAKELISP_TEST_FLAGS)
