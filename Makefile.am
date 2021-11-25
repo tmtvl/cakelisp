@@ -1,4 +1,4 @@
-SUBDIRS = src
+SUBDIRS = doc src
 
 dist_bin_SCRIPTS = bin/cakelisp$(EXEEXT)
 CLEANFILES = $(dist_bin_SCRIPTS)
