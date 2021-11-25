@@ -54,3 +54,27 @@ VisualStudio/Cakelisp/x64
 VisualStudio/Cakelisp/.vs
 output.exe
 *.pdb
+
+# Autotools
+*.log
+*.trs
+*~
+.deps
+Makefile
+Makefile.in
+aclocal.m4
+autom4te.cache
+compile
+config.guess
+config.h
+config.h.in
+config.status
+config.sub
+configure
+depcomp
+install-sh
+missing
+stamp-h1
+test-driver
+
+src/cakelisp_bootstrap
